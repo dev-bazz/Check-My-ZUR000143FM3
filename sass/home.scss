@@ -1,0 +1,6 @@
+@use "./functions.scss" as *;
+
+.navbar {
+	background-color: #b6ce4d;
+	padding-inline: px-to-rem(24px);
+}
