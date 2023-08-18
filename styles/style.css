@@ -94,10 +94,23 @@ select {
   display: flex;
 }
 .navbar_search__input {
+  all: unset;
   padding: 0.25rem 0.5rem;
+  background-color: #fff;
 }
 .navbar_search__input::placeholder {
   color: #9ca3af;
+}
+.navbar_search__button {
+  transition: all 0.2s ease-in-out;
+  background-color: #008cba;
+  color: #fff;
+  border: none;
+  padding-inline: 1.5rem;
+  cursor: pointer;
+}
+.navbar_search__button:hover {
+  background-color: #006687;
 }
 
 /*# sourceMappingURL=style.css.map */

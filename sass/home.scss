@@ -16,9 +16,23 @@
 	}
 
 	&_search__input {
+		all: unset;
 		&::placeholder {
 			color: map-get($colors, "gray-400");
 		}
 		padding: px-to-rem(4px) px-to-rem(8px);
+		background-color: #fff;
+	}
+
+	&_search__button {
+		transition: all 0.2s ease-in-out;
+		background-color: map-get($colors, "blue");
+		color: #fff;
+		border: none;
+		padding-inline: px-to-rem(24px);
+		cursor: pointer;
+		&:hover {
+			background-color: darken(map-get($colors, "blue"), $amount: 10);
+		}
 	}
 }
