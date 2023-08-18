@@ -1,6 +1,24 @@
 @use "./functions.scss" as *;
+@use "./colors.scss" as *;
 
 .navbar {
-	background-color: #b6ce4d;
+	background: map-get($colors, "gradient");
 	padding-inline: px-to-rem(24px);
+	min-height: px-to-rem(45px);
+	font-family: helvetica;
+	display: flex;
+	align-items: center;
+	user-select: none;
+	padding-block: px-to-rem(4px);
+
+	&_search__container {
+		display: flex;
+	}
+
+	&_search__input {
+		&::placeholder {
+			color: map-get($colors, "gray-400");
+		}
+		padding: px-to-rem(4px) px-to-rem(8px);
+	}
 }

@@ -74,9 +74,30 @@ select {
     scroll-behavior: auto !important;
   }
 }
+@font-face {
+  font-family: "helvetica";
+  src: url("../assets/fonts/Helvetica.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
 .navbar {
-  background-color: #b6ce4d;
+  background: linear-gradient(180deg, #b6ce4d 0%, #70a306 100%);
   padding-inline: 1.5rem;
+  min-height: 2.8125rem;
+  font-family: helvetica;
+  display: flex;
+  align-items: center;
+  user-select: none;
+  padding-block: 0.25rem;
+}
+.navbar_search__container {
+  display: flex;
+}
+.navbar_search__input {
+  padding: 0.25rem 0.5rem;
+}
+.navbar_search__input::placeholder {
+  color: #9ca3af;
 }
 
 /*# sourceMappingURL=style.css.map */
