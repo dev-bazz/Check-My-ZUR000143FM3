@@ -4,14 +4,13 @@
 .navbar {
 	background: map-get($colors, "gradient");
 	padding-inline: px-to-rem(24px);
-	// height: px-to-rem(45px);
+	height: px-to-rem(44px);
 	font-family: helvetica;
 	display: flex;
 	align-items: center;
 	user-select: none;
 	font-size: px-to-rem(12px);
 	justify-content: space-between;
-	height: px-to-rem(44px);
 
 	.left {
 		display: flex;

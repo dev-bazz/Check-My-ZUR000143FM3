@@ -83,13 +83,13 @@ select {
 .navbar {
   background: linear-gradient(180deg, #b6ce4d 0%, #70a306 100%);
   padding-inline: 1.5rem;
+  height: 2.75rem;
   font-family: helvetica;
   display: flex;
   align-items: center;
   user-select: none;
   font-size: 0.75rem;
   justify-content: space-between;
-  height: 2.75rem;
 }
 .navbar .left {
   display: flex;
