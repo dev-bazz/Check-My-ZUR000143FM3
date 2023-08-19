@@ -6,44 +6,224 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
     <title>Check My ZUR000143FM3</title>
+    <script src="./index.js" defer></script>
   </head>
 
   <body>
-    <nav class="navbar">
-      <div class="left">
-        <img src="./assets/home.svg" alt="logo">
-        <div class="navbar_1">
-          <div class="navbar_search__container">
-            <input type="text" class="navbar_search__input" placeholder="Search">
-            <button class="navbar_search__button ">Search</button>
+    <div class="global-nav">
+      <nav class="navbar">
+        <div class="left">
+          <img src="./assets/home.svg" class="logo" alt="logo">
+          <div class="navbar_1">
+            <div class="navbar_search__container">
+              <input type="text" class="navbar_search__input" placeholder="Search">
+              <button class="navbar_search__button ">Search</button>
+            </div>
+            <div class="dropdown">
+              <span class="dropdown_label">
+                <p>Postcode Lists </p>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <mask id="mask0_4_7" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24"
+                            height="24">
+                    <rect width="24" height="24" fill="#D9D9D9" />
+                  </mask>
+                  <g mask="url(#mask0_4_7)">
+                    <path d="M12 15L7 10H17L12 15Z" fill="#BBD57F" />
+                  </g>
+                </svg>
+              </span>
+              <ul id="dropdown_menu__help&info" class="dropdown_menu">
+                <li>About this website</li>
+                <li>Privacy Policy</li>
+              </ul>
+            </div>
+            <div class="dropdown">
+              <span class="dropdown_label">
+                <p>Postcode Maps </p>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <mask id="mask0_4_7" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24"
+                            height="24">
+                    <rect width="24" height="24" fill="#D9D9D9" />
+                  </mask>
+                  <g mask="url(#mask0_4_7)">
+                    <path d="M12 15L7 10H17L12 15Z" fill="#BBD57F" />
+                  </g>
+                </svg>
+              </span>
+              <ul id="dropdown_menu__help&info" class="dropdown_menu">
+                <li>About this website</li>
+                <li>Privacy Policy</li>
+              </ul>
+            </div>
+            <div class="dropdown">
+              <span class="dropdown_label">
+                <p>Nearest Postcodes </p>
+              </span>
+            </div>
+            <div class="dropdown">
+              <span class="dropdown_label">
+                <p>Postcode Lottery </p>
+              </span>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="dropdown">
-        <span class="dropdown_label">
-          <p>Help & Information </p>
+        <div class="dropdown">
+          <span class="dropdown_label">
+            <p>Help & Information </p>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <mask id="mask0_4_7" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24"
+                        height="24">
+                <rect width="24" height="24" fill="#D9D9D9" />
+              </mask>
+              <g mask="url(#mask0_4_7)">
+                <path d="M12 15L7 10H17L12 15Z" fill="#BBD57F" />
+              </g>
+            </svg>
+          </span>
+          <ul id="dropdown_menu__help&info" class="dropdown_menu">
+            <li>About this website</li>
+            <li>Privacy Policy</li>
+          </ul>
+        </div>
+        <div class="mobile">
+          <label for="check">
+            Menu
+          </label>
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <mask id="mask0_4_7" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
-              <rect width="24" height="24" fill="#D9D9D9" />
+            <mask id="mask0_46_7" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+              <rect class="m-icon" width="24" height="24" fill="#D9D9D9" />
             </mask>
-            <g mask="url(#mask0_4_7)">
-              <path d="M12 15L7 10H17L12 15Z" fill="#BBD57F" />
+            <g mask="url(#mask0_46_7)">
+              <path class="m-icon" d="M3 18V16H21V18H3ZM3 13V11H21V13H3ZM3 8V6H21V8H3Z" />
             </g>
           </svg>
+        </div>
+      </nav>
+      <div class="bottom">
+        <div class="dropdown">
+          <label class="dropdown_label" for="1">
+            <p>Help & Information </p>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <mask id="mask0_4_7" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24"
+                        height="24">
+                <rect width="24" height="24" fill="#D9D9D9" />
+              </mask>
+              <g mask="url(#mask0_4_7)">
+                <path d="M12 15L7 10H17L12 15Z" fill="#BBD57F" />
+              </g>
+            </svg>
+          </label>
+          <input type="checkbox" name="" id="1">
+          <ul class="dropdown_menu">
+            <li>About this website</li>
+            <li>Privacy Policy</li>
+          </ul>
+        </div>
 
-        </span>
+        <div class="dropdown">
+          <label class="dropdown_label" for="1">
+            <p>Help & Information </p>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <mask id="mask0_4_7" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24"
+                        height="24">
+                <rect width="24" height="24" fill="#D9D9D9" />
+              </mask>
+              <g mask="url(#mask0_4_7)">
+                <path d="M12 15L7 10H17L12 15Z" fill="#BBD57F" />
+              </g>
+            </svg>
+          </label>
+          <input type="checkbox" name="" id="1">
+          <ul class="dropdown_menu">
+            <li>About this website</li>
+            <li>Privacy Policy</li>
+          </ul>
+        </div>
 
+        <div class="dropdown">
+          <label class="dropdown_label" for="1">
+            <p>Postcode Lists </p>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <mask id="mask0_4_7" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24"
+                        height="24">
+                <rect width="24" height="24" fill="#D9D9D9" />
+              </mask>
+              <g mask="url(#mask0_4_7)">
+                <path d="M12 15L7 10H17L12 15Z" fill="#BBD57F" />
+              </g>
+            </svg>
+          </label>
+          <input type="checkbox" name="" id="1">
+          <ul class="dropdown_menu">
+            <li>About this website</li>
+            <li>Privacy Policy</li>
+          </ul>
+        </div>
 
-        <ul id="dropdown_menu__help&info" class="dropdown_menu">
-          <li>About this website</li>
-          <li>Privacy Policy</li>
+        <div class="dropdown">
+          <label class="dropdown_label" for="1">
+            <p>Postcode Maps </p>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <mask id="mask0_4_7" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24"
+                        height="24">
+                <rect width="24" height="24" fill="#D9D9D9" />
+              </mask>
+              <g mask="url(#mask0_4_7)">
+                <path d="M12 15L7 10H17L12 15Z" fill="#BBD57F" />
+              </g>
+            </svg>
+          </label>
+          <input type="checkbox" name="" id="1">
+          <ul class="dropdown_menu">
+            <li>About this website</li>
+            <li>Privacy Policy</li>
+          </ul>
+        </div>
 
-        </ul>
+        <div class="dropdown">
+          <label class="dropdown_label" for="1">
+            <p>Nearest Postcodes </p>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <mask id="mask0_4_7" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24"
+                        height="24">
+                <rect width="24" height="24" fill="#D9D9D9" />
+              </mask>
+              <g mask="url(#mask0_4_7)">
+                <path d="M12 15L7 10H17L12 15Z" fill="#BBD57F" />
+              </g>
+            </svg>
+          </label>
+          <input type="checkbox" name="" id="1">
+          <ul class="dropdown_menu">
+            <li>About this website</li>
+            <li>Privacy Policy</li>
+          </ul>
+        </div>
+
+        <div class="dropdown">
+          <label class="dropdown_label" for="1">
+            <p>Postcode Lottery </p>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <mask id="mask0_4_7" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24"
+                        height="24">
+                <rect width="24" height="24" fill="#D9D9D9" />
+              </mask>
+              <g mask="url(#mask0_4_7)">
+                <path d="M12 15L7 10H17L12 15Z" fill="#BBD57F" />
+              </g>
+            </svg>
+          </label>
+          <input type="checkbox" name="" id="1">
+          <ul class="dropdown_menu">
+            <li>About this website</li>
+            <li>Privacy Policy</li>
+          </ul>
+        </div>
+
 
 
       </div>
-
-    </nav>
+    </div>
 
   </body>
 
