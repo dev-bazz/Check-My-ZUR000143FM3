@@ -4,12 +4,18 @@
 .navbar {
 	background: map-get($colors, "gradient");
 	padding-inline: px-to-rem(24px);
-	min-height: px-to-rem(45px);
+	// height: px-to-rem(45px);
 	font-family: helvetica;
 	display: flex;
 	align-items: center;
 	user-select: none;
-	padding-block: px-to-rem(4px);
+	font-size: px-to-rem(12px);
+	justify-content: space-between;
+	height: px-to-rem(44px);
+
+	.left {
+		display: flex;
+	}
 
 	&_search__container {
 		display: flex;
@@ -31,8 +37,47 @@
 		border: none;
 		padding-inline: px-to-rem(24px);
 		cursor: pointer;
-		&:hover {
+
+		&:is(:hover) {
 			background-color: darken(map-get($colors, "blue"), $amount: 10);
+		}
+	}
+
+	.dropdown {
+		color: white;
+		position: relative;
+		height: 100%;
+		display: grid;
+		place-items: left;
+		flex-basis: clamp(10px, 100%, 136px);
+		cursor: pointer;
+
+		&_label {
+			display: flex;
+			align-items: center;
+			padding-inline-start: px-to-rem(12px);
+		}
+
+		&_menu {
+			display: none;
+			text-align: center;
+		}
+
+		&:is(:hover, :focus) .dropdown_menu {
+			display: block;
+			position: absolute;
+			width: 100%;
+			margin: 0;
+			top: 100%;
+			& li {
+				background: map-get($colors, "gradient");
+				padding-block: px-to-rem(8px);
+				text-align: left;
+				padding-inline-start: px-to-rem(12px);
+				&:hover {
+					background: map-get($colors, "gradient-2");
+				}
+			}
 		}
 	}
 }

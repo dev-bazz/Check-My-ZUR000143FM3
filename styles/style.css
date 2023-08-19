@@ -83,12 +83,16 @@ select {
 .navbar {
   background: linear-gradient(180deg, #b6ce4d 0%, #70a306 100%);
   padding-inline: 1.5rem;
-  min-height: 2.8125rem;
   font-family: helvetica;
   display: flex;
   align-items: center;
   user-select: none;
-  padding-block: 0.25rem;
+  font-size: 0.75rem;
+  justify-content: space-between;
+  height: 2.75rem;
+}
+.navbar .left {
+  display: flex;
 }
 .navbar_search__container {
   display: flex;
@@ -109,8 +113,42 @@ select {
   padding-inline: 1.5rem;
   cursor: pointer;
 }
-.navbar_search__button:hover {
+.navbar_search__button:is(:hover) {
   background-color: #006687;
+}
+.navbar .dropdown {
+  color: white;
+  position: relative;
+  height: 100%;
+  display: grid;
+  place-items: left;
+  flex-basis: clamp(10px, 100%, 136px);
+  cursor: pointer;
+}
+.navbar .dropdown_label {
+  display: flex;
+  align-items: center;
+  padding-inline-start: 0.75rem;
+}
+.navbar .dropdown_menu {
+  display: none;
+  text-align: center;
+}
+.navbar .dropdown:is(:hover, :focus) .dropdown_menu {
+  display: block;
+  position: absolute;
+  width: 100%;
+  margin: 0;
+  top: 100%;
+}
+.navbar .dropdown:is(:hover, :focus) .dropdown_menu li {
+  background: linear-gradient(180deg, #b6ce4d 0%, #70a306 100%);
+  padding-block: 0.5rem;
+  text-align: left;
+  padding-inline-start: 0.75rem;
+}
+.navbar .dropdown:is(:hover, :focus) .dropdown_menu li:hover {
+  background: linear-gradient(180deg, #b6ce4d 0%, #70a306 60%);
 }
 
 /*# sourceMappingURL=style.css.map */
