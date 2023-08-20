@@ -2,6 +2,10 @@
 @use "./colors.scss" as *;
 @use "./media.scss" as *;
 
+body {
+	font-family: helvetica;
+}
+
 .navbar {
 	background: map-get($colors, "gradient");
 	padding-inline: px-to-rem(24px);
@@ -178,5 +182,60 @@
 	display: block;
 	@include custom-media-query("desktop", 1010px) {
 		display: none;
+	}
+}
+
+.posts {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	gap: px-to-rem(4px);
+	@include custom-media-query("desktop", 1010px) {
+		grid-template-columns: repeat(6, auto);
+	}
+
+	@include custom-media-query("mobile", 500px) {
+		grid-template-columns: repeat(2, auto);
+	}
+}
+
+.container {
+	max-width: px-to-rem(1200px);
+	margin: auto;
+	padding: 0 px-to-rem(16px);
+}
+
+$box-count: 80;
+$font-max: 32px; // Total number of box classes
+
+@for $i from 0 through $box-count {
+	.post_#{$i} {
+		// Common styles for all boxes
+		padding: px-to-rem(8px, 1em);
+		background-color: #5a52e9;
+		color: #fff;
+
+		@if $i < 6 {
+			// Styles for boxes with class number less than 5
+
+			font-size: $font-max;
+		} @else if $i >= 6 and $i <12 {
+			// Styles for boxes with class number 5 and greater
+
+			font-size: calc($font-max - 6px);
+		} @else if $i >= 12 and $i <18 {
+			// Styles for boxes with class number 5 and greater
+
+			font-size: calc($font-max - 12px);
+		} @else if $i >= 18 and $i <24 {
+			// Styles for boxes with class number 5 and greater
+
+			font-size: calc($font-max - 16px);
+		} @else {
+			// Styles for boxes with class number 5 and greater
+
+			font-size: calc($font-max - 20px);
+		}
 	}
 }

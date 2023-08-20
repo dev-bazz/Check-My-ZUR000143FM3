@@ -3,3 +3,22 @@ $base-font-size: 16px;
 @function px-to-rem($px, $suffix: 1rem) {
 	@return calc(($px / $base-font-size) * $suffix);
 }
+
+@mixin loop($length) {
+	$box-count: 12; // Total number of box classes
+
+	@for $i from 1 through $box-count {
+		.box-#{$i} {
+			// Common styles for all boxes
+			color: pink;
+
+			@if $i < 5 {
+				// Styles for boxes with class number less than 5
+				color: blue;
+			} @else {
+				// Styles for boxes with class number 5 and greater
+				color: yellow;
+			}
+		}
+	}
+}
