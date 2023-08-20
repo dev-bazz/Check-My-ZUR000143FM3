@@ -219,10 +219,13 @@ select {
   padding: 0.5em 1em;
   border-bottom: 1px solid #70a306;
 }
-.bottom input {
+.bottom input[type=text] {
+  color: black !important;
+}
+.bottom input[type=radio] {
   display: none;
 }
-.bottom input:checked + ul {
+.bottom input[type=radio]:checked + ul {
   display: block;
 }
 .bottom ul {

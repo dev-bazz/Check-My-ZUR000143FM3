@@ -147,7 +147,12 @@
 			border-bottom: 1px solid #70a306;
 		}
 	}
-	input {
+
+	input[type="text"] {
+		color: black !important;
+	}
+
+	input[type="radio"] {
 		display: none;
 
 		&:checked + ul {
