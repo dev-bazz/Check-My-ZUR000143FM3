@@ -188,8 +188,7 @@ body {
 .posts {
 	display: flex;
 	flex-wrap: wrap;
-	align-items: center;
-	justify-content: space-between;
+
 	gap: px-to-rem(4px);
 	@include custom-media-query("desktop", 1010px) {
 		grid-template-columns: repeat(6, auto);
@@ -213,16 +212,27 @@ $font-max: 32px; // Total number of box classes
 	.post_#{$i} {
 		// Common styles for all boxes
 		padding: px-to-rem(8px, 1em);
-		background-color: #5a52e9;
-		color: #fff;
+		background-color: map-get($colors, "light-blue");
+		color: map-get($colors, "blue");
+		cursor: pointer;
+		transition: all 0.2s ease-in-out;
+		&:hover {
+			background-color: map-get($colors, "blue");
+			color: map-get($colors, "light-blue");
+		}
 
 		@if $i < 6 {
 			// Styles for boxes with class number less than 5
 
 			font-size: $font-max;
+			@include custom-media-query("mobile", 500px) {
+				font-size: 24px;
+			}
 		} @else if $i >= 6 and $i <12 {
 			// Styles for boxes with class number 5 and greater
-
+			@include custom-media-query("mobile", 500px) {
+				font-size: 18px;
+			}
 			font-size: calc($font-max - 6px);
 		} @else if $i >= 12 and $i <18 {
 			// Styles for boxes with class number 5 and greater
@@ -230,12 +240,48 @@ $font-max: 32px; // Total number of box classes
 			font-size: calc($font-max - 12px);
 		} @else if $i >= 18 and $i <24 {
 			// Styles for boxes with class number 5 and greater
+			@include custom-media-query("mobile", 500px) {
+				font-size: 16px;
+			}
 
 			font-size: calc($font-max - 16px);
 		} @else {
 			// Styles for boxes with class number 5 and greater
+			@include custom-media-query("mobile", 500px) {
+				font-size: 14px;
+			}
 
 			font-size: calc($font-max - 20px);
 		}
+	}
+}
+
+.hero {
+	background-color: map-get($colors, "pink");
+	padding: px-to-rem(16px);
+	border-radius: px-to-rem(16px);
+	border: 2px solid map-get($colors, "orange");
+	min-height: 30vh;
+	display: grid;
+	place-items: center;
+}
+
+.check_code {
+	margin-top: px-to-rem(18px);
+	font-size: px-to-rem(44px);
+	font-weight: 400;
+
+	@include custom-media-query("mobile", 500px) {
+		font-size: 32px;
+	}
+}
+
+.ppc {
+	margin-top: px-to-rem(24px);
+	font-size: px-to-rem(36px);
+	font-weight: 400;
+
+	@include custom-media-query("mobile", 500px) {
+		font-size: 26px;
 	}
 }
