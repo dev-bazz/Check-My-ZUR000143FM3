@@ -1833,6 +1833,8 @@ body {
 }
 .ads img {
   margin: auto;
+  cursor: not-allowed;
+  user-select: none;
 }
 
 .sub-menu {

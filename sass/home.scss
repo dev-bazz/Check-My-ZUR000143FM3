@@ -358,6 +358,8 @@ $font-max: 32px; // Total number of box classes
 	margin-top: px-to-rem(28px);
 	img {
 		margin: auto;
+		cursor: not-allowed;
+		user-select: none;
 	}
 }
 
