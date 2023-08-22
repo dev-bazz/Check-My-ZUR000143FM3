@@ -353,3 +353,22 @@ $font-max: 32px; // Total number of box classes
 		margin-top: px-to-rem(6px);
 	}
 }
+
+.ads {
+	margin-top: px-to-rem(28px);
+	img {
+		margin: auto;
+	}
+}
+
+.sub-menu {
+	background-color: map-get($colors, "light-blue");
+	padding-block: px-to-rem(24px);
+	padding-inline: px-to-rem(16px);
+
+	.container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
