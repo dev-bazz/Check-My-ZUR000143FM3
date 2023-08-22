@@ -74,6 +74,32 @@ select {
     scroll-behavior: auto !important;
   }
 }
+/* Width and height of the scroll bar track */
+::-webkit-scrollbar {
+  width: 0px;
+  height: 2px;
+}
+
+/* Track background color */
+::-webkit-scrollbar-track {
+  background-color: rgba(252, 253, 255, 0.9725490196);
+}
+
+/* Handle (thumb) of the scroll bar */
+::-webkit-scrollbar-thumb {
+  background-color: rgba(240, 64, 64, 0.7568627451);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
 @font-face {
   font-family: "helvetica";
   src: url("../assets/fonts/Helvetica.ttf") format("truetype");
@@ -126,14 +152,14 @@ body {
 }
 .navbar_search__button {
   transition: all 0.2s ease-in-out;
-  background-color: #3097b9;
+  background-color: #007095;
   color: #fff;
   border: none;
   padding-inline: 1.5em;
   cursor: pointer;
 }
 .navbar_search__button:is(:hover) {
-  background-color: #257691;
+  background-color: #004a62;
 }
 .navbar .dropdown {
   color: white;
@@ -163,7 +189,7 @@ body {
 .navbar .dropdown:is(:hover, :focus) .dropdown_menu {
   display: block;
   position: absolute;
-  width: 100%;
+  width: 8.75rem;
   margin: 0;
   top: 100%;
 }
@@ -280,13 +306,13 @@ body {
 .post_0 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 32px;
 }
 .post_0:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 @media (max-width: 500px) {
@@ -298,13 +324,13 @@ body {
 .post_1 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 32px;
 }
 .post_1:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 @media (max-width: 500px) {
@@ -316,13 +342,13 @@ body {
 .post_2 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 32px;
 }
 .post_2:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 @media (max-width: 500px) {
@@ -334,13 +360,13 @@ body {
 .post_3 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 32px;
 }
 .post_3:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 @media (max-width: 500px) {
@@ -352,13 +378,13 @@ body {
 .post_4 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 32px;
 }
 .post_4:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 @media (max-width: 500px) {
@@ -370,13 +396,13 @@ body {
 .post_5 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 32px;
 }
 .post_5:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 @media (max-width: 500px) {
@@ -388,13 +414,13 @@ body {
 .post_6 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 26px;
 }
 .post_6:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 @media (max-width: 500px) {
@@ -406,13 +432,13 @@ body {
 .post_7 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 26px;
 }
 .post_7:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 @media (max-width: 500px) {
@@ -424,13 +450,13 @@ body {
 .post_8 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 26px;
 }
 .post_8:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 @media (max-width: 500px) {
@@ -442,13 +468,13 @@ body {
 .post_9 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 26px;
 }
 .post_9:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 @media (max-width: 500px) {
@@ -460,13 +486,13 @@ body {
 .post_10 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 26px;
 }
 .post_10:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 @media (max-width: 500px) {
@@ -478,13 +504,13 @@ body {
 .post_11 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 26px;
 }
 .post_11:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 @media (max-width: 500px) {
@@ -496,91 +522,91 @@ body {
 .post_12 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 20px;
 }
 .post_12:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 
 .post_13 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 20px;
 }
 .post_13:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 
 .post_14 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 20px;
 }
 .post_14:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 
 .post_15 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 20px;
 }
 .post_15:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 
 .post_16 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 20px;
 }
 .post_16:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 
 .post_17 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 20px;
 }
 .post_17:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 
 .post_18 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 16px;
 }
 .post_18:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 @media (max-width: 500px) {
@@ -592,13 +618,13 @@ body {
 .post_19 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 16px;
 }
 .post_19:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 @media (max-width: 500px) {
@@ -610,13 +636,13 @@ body {
 .post_20 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 16px;
 }
 .post_20:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 @media (max-width: 500px) {
@@ -628,13 +654,13 @@ body {
 .post_21 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 16px;
 }
 .post_21:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 @media (max-width: 500px) {
@@ -646,13 +672,13 @@ body {
 .post_22 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 16px;
 }
 .post_22:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 @media (max-width: 500px) {
@@ -664,13 +690,13 @@ body {
 .post_23 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 16px;
 }
 .post_23:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 @media (max-width: 500px) {
@@ -682,13 +708,13 @@ body {
 .post_24 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 12px;
 }
 .post_24:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 @media (max-width: 500px) {
@@ -700,13 +726,13 @@ body {
 .post_25 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 12px;
 }
 .post_25:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 @media (max-width: 500px) {
@@ -718,13 +744,13 @@ body {
 .post_26 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 12px;
 }
 .post_26:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 @media (max-width: 500px) {
@@ -736,13 +762,13 @@ body {
 .post_27 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 12px;
 }
 .post_27:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 @media (max-width: 500px) {
@@ -754,13 +780,13 @@ body {
 .post_28 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 12px;
 }
 .post_28:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 @media (max-width: 500px) {
@@ -772,13 +798,13 @@ body {
 .post_29 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 12px;
 }
 .post_29:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 @media (max-width: 500px) {
@@ -790,13 +816,13 @@ body {
 .post_30 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 12px;
 }
 .post_30:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 @media (max-width: 500px) {
@@ -808,13 +834,13 @@ body {
 .post_31 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 12px;
 }
 .post_31:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 @media (max-width: 500px) {
@@ -826,13 +852,13 @@ body {
 .post_32 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 12px;
 }
 .post_32:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 @media (max-width: 500px) {
@@ -844,13 +870,13 @@ body {
 .post_33 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 12px;
 }
 .post_33:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 @media (max-width: 500px) {
@@ -862,13 +888,13 @@ body {
 .post_34 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 12px;
 }
 .post_34:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 @media (max-width: 500px) {
@@ -880,13 +906,13 @@ body {
 .post_35 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 12px;
 }
 .post_35:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 @media (max-width: 500px) {
@@ -898,13 +924,13 @@ body {
 .post_36 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 12px;
 }
 .post_36:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 @media (max-width: 500px) {
@@ -916,13 +942,13 @@ body {
 .post_37 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 12px;
 }
 .post_37:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 @media (max-width: 500px) {
@@ -934,13 +960,13 @@ body {
 .post_38 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 12px;
 }
 .post_38:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 @media (max-width: 500px) {
@@ -952,13 +978,13 @@ body {
 .post_39 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 12px;
 }
 .post_39:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 @media (max-width: 500px) {
@@ -970,13 +996,13 @@ body {
 .post_40 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 12px;
 }
 .post_40:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 @media (max-width: 500px) {
@@ -988,13 +1014,13 @@ body {
 .post_41 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 12px;
 }
 .post_41:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 @media (max-width: 500px) {
@@ -1006,13 +1032,13 @@ body {
 .post_42 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 12px;
 }
 .post_42:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 @media (max-width: 500px) {
@@ -1024,13 +1050,13 @@ body {
 .post_43 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 12px;
 }
 .post_43:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 @media (max-width: 500px) {
@@ -1042,13 +1068,13 @@ body {
 .post_44 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 12px;
 }
 .post_44:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 @media (max-width: 500px) {
@@ -1060,13 +1086,13 @@ body {
 .post_45 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 12px;
 }
 .post_45:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 @media (max-width: 500px) {
@@ -1078,13 +1104,13 @@ body {
 .post_46 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 12px;
 }
 .post_46:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 @media (max-width: 500px) {
@@ -1096,13 +1122,13 @@ body {
 .post_47 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 12px;
 }
 .post_47:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 @media (max-width: 500px) {
@@ -1114,13 +1140,13 @@ body {
 .post_48 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 12px;
 }
 .post_48:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 @media (max-width: 500px) {
@@ -1132,13 +1158,13 @@ body {
 .post_49 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 12px;
 }
 .post_49:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 @media (max-width: 500px) {
@@ -1150,13 +1176,13 @@ body {
 .post_50 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 12px;
 }
 .post_50:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 @media (max-width: 500px) {
@@ -1168,13 +1194,13 @@ body {
 .post_51 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 12px;
 }
 .post_51:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 @media (max-width: 500px) {
@@ -1186,13 +1212,13 @@ body {
 .post_52 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 12px;
 }
 .post_52:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 @media (max-width: 500px) {
@@ -1204,13 +1230,13 @@ body {
 .post_53 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 12px;
 }
 .post_53:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 @media (max-width: 500px) {
@@ -1222,13 +1248,13 @@ body {
 .post_54 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 12px;
 }
 .post_54:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 @media (max-width: 500px) {
@@ -1240,13 +1266,13 @@ body {
 .post_55 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 12px;
 }
 .post_55:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 @media (max-width: 500px) {
@@ -1258,13 +1284,13 @@ body {
 .post_56 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 12px;
 }
 .post_56:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 @media (max-width: 500px) {
@@ -1276,13 +1302,13 @@ body {
 .post_57 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 12px;
 }
 .post_57:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 @media (max-width: 500px) {
@@ -1294,13 +1320,13 @@ body {
 .post_58 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 12px;
 }
 .post_58:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 @media (max-width: 500px) {
@@ -1312,13 +1338,13 @@ body {
 .post_59 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 12px;
 }
 .post_59:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 @media (max-width: 500px) {
@@ -1330,13 +1356,13 @@ body {
 .post_60 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 12px;
 }
 .post_60:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 @media (max-width: 500px) {
@@ -1348,13 +1374,13 @@ body {
 .post_61 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 12px;
 }
 .post_61:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 @media (max-width: 500px) {
@@ -1366,13 +1392,13 @@ body {
 .post_62 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 12px;
 }
 .post_62:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 @media (max-width: 500px) {
@@ -1384,13 +1410,13 @@ body {
 .post_63 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 12px;
 }
 .post_63:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 @media (max-width: 500px) {
@@ -1402,13 +1428,13 @@ body {
 .post_64 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 12px;
 }
 .post_64:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 @media (max-width: 500px) {
@@ -1420,13 +1446,13 @@ body {
 .post_65 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 12px;
 }
 .post_65:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 @media (max-width: 500px) {
@@ -1438,13 +1464,13 @@ body {
 .post_66 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 12px;
 }
 .post_66:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 @media (max-width: 500px) {
@@ -1456,13 +1482,13 @@ body {
 .post_67 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 12px;
 }
 .post_67:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 @media (max-width: 500px) {
@@ -1474,13 +1500,13 @@ body {
 .post_68 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 12px;
 }
 .post_68:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 @media (max-width: 500px) {
@@ -1492,13 +1518,13 @@ body {
 .post_69 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 12px;
 }
 .post_69:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 @media (max-width: 500px) {
@@ -1510,13 +1536,13 @@ body {
 .post_70 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 12px;
 }
 .post_70:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 @media (max-width: 500px) {
@@ -1528,13 +1554,13 @@ body {
 .post_71 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 12px;
 }
 .post_71:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 @media (max-width: 500px) {
@@ -1546,13 +1572,13 @@ body {
 .post_72 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 12px;
 }
 .post_72:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 @media (max-width: 500px) {
@@ -1564,13 +1590,13 @@ body {
 .post_73 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 12px;
 }
 .post_73:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 @media (max-width: 500px) {
@@ -1582,13 +1608,13 @@ body {
 .post_74 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 12px;
 }
 .post_74:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 @media (max-width: 500px) {
@@ -1600,13 +1626,13 @@ body {
 .post_75 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 12px;
 }
 .post_75:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 @media (max-width: 500px) {
@@ -1618,13 +1644,13 @@ body {
 .post_76 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 12px;
 }
 .post_76:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 @media (max-width: 500px) {
@@ -1636,13 +1662,13 @@ body {
 .post_77 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 12px;
 }
 .post_77:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 @media (max-width: 500px) {
@@ -1654,13 +1680,13 @@ body {
 .post_78 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 12px;
 }
 .post_78:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 @media (max-width: 500px) {
@@ -1672,13 +1698,13 @@ body {
 .post_79 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 12px;
 }
 .post_79:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 @media (max-width: 500px) {
@@ -1690,13 +1716,13 @@ body {
 .post_80 {
   padding: 0.5em;
   background-color: #dddddd;
-  color: #3097b9;
+  color: #007095;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 12px;
 }
 .post_80:hover {
-  background-color: #3097b9;
+  background-color: #007095;
   color: #dddddd;
 }
 @media (max-width: 500px) {
@@ -1707,12 +1733,46 @@ body {
 
 .hero {
   background-color: #fc9;
-  padding: 1rem;
+  padding-block: 1rem;
+  padding-inline: 2rem;
   border-radius: 1rem;
   border: 2px solid #ffa500;
   min-height: 30vh;
   display: grid;
   place-items: center;
+}
+.hero .top {
+  display: flex;
+  width: 100%;
+  gap: 2.125rem;
+  flex-wrap: wrap;
+}
+.hero .top input {
+  flex-grow: 1.4;
+  padding-inline: 1rem;
+  padding-block: 0.75rem;
+}
+.hero .top button {
+  background-color: #007095;
+  border: none;
+  color: #fff;
+  padding-inline: 2rem;
+  padding-block: 0.75rem;
+}
+.hero .lower {
+  display: flex;
+  gap: 2.125rem;
+  flex-wrap: wrap;
+}
+.hero .lower button {
+  background-color: #007095;
+  border: none;
+  color: #fff;
+  padding-inline: 2rem;
+  padding-block: 0.75rem;
+}
+.hero .lower p {
+  font-size: 1.125rem;
 }
 
 .check_code {
@@ -1735,6 +1795,37 @@ body {
   .ppc {
     font-size: 26px;
   }
+}
+
+.about {
+  background-color: #f2f2f2;
+  padding: 1rem;
+  padding-block: 2rem;
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #d8d8d8;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.footer {
+  background-color: #333;
+}
+.footer a {
+  color: #fff;
+  font-size: 0.875rem;
+}
+.footer .top {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  padding-block: 2rem;
+  flex-wrap: wrap;
+}
+.footer ul > * + * {
+  margin-top: 0.375rem;
 }
 
 /*# sourceMappingURL=style.css.map */
